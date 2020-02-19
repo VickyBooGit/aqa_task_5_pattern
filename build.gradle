@@ -18,6 +18,11 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.5.1'
     testImplementation 'com.codeborne:selenide:5.3.1'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testImplementation 'com.github.javafaker:javafaker:1.0.1'
 }
 
 test {

@@ -22,7 +22,7 @@ public class CardDelivery {
     @Test
     void shouldScheduleDateOfCardDelivery() {
         open("http://localhost:9999");
-        $("[placeholder='Город']").setValue("Петрозаводск").pressEnter();
+        $("[placeholder='Город']").setValue(faker.address().cityName()).pressEnter();
         $("[type='tel']").sendKeys(Keys.CONTROL, "a");
         $("[type='tel']").sendKeys(Keys.DELETE);
         $("[type='tel']").setValue(Utils.getFormattedRandomDate());

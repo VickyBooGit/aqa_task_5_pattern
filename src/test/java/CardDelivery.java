@@ -1,22 +1,12 @@
 import com.codeborne.selenide.Condition;
-import com.github.javafaker.Faker;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-
-import java.util.Locale;
-
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CardDelivery {
-    private Faker faker;
 
-    @BeforeEach
-    void setUpAll() {
-        faker = new Faker(new Locale("ru"));
-    }
 
     @Test
     void shouldScheduleDateOfCardDelivery() {
